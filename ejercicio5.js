@@ -1,43 +1,23 @@
 const usuarios = [
     {
         usuario:"Sebastian",
-        movimientos:[
-            {
-                1:30000
-            },
-            {
-                2:20000
-            }
-        ]
+        movimientos:[30000,20000]
     },
     {
         usuario:"Daniel",
-        movimientos:[
-            {
-                1:60000
-            },
-            {
-                2:40000
-            }
-        ]
+        movimientos:[60000,40000]
     },
     {
         usuario:"Oscar",
-        movimientos:[
-            {
-                1:20000
-            },
-            {
-                2:90000
-            }
-        ]
+        movimientos:[90000,80000]
     }
 ]
 
 for(let i = 0; i < usuarios.length; i++){
-    
-    for(let j = 0; j < i; j++){
-        console.log("Usuario: ", usuarios[i].usuario);
-        console.log("\nMovimientos: ", usuarios[i].movimientos[i]);
+    console.log("\nUsuario: ", usuarios[i].usuario);
+    console.log("Movimientos: ");
+    for(let j = 0; j < usuarios[i].movimientos.length; j++){    
+        console.log((j+1), usuarios[i].movimientos[j]);
     }
+    console.log("\n");
 }
