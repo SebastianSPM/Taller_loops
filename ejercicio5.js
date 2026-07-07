@@ -1,3 +1,5 @@
+
+let totalusuario = 0;
 const usuarios = [
     {
         usuario:"Sebastian",
@@ -15,9 +17,11 @@ const usuarios = [
 
 for(let i = 0; i < usuarios.length; i++){
     console.log("\nUsuario: ", usuarios[i].usuario);
-    console.log("Movimientos: ");
+    totalusuario = 0;
+
     for(let j = 0; j < usuarios[i].movimientos.length; j++){    
-        console.log(j+1, usuarios[i].movimientos[j]);
+        totalusuario += usuarios[i].movimientos[j]
     }
-    console.log("\n");
+    console.log(`Total: ${totalusuario}`);
+    
 }
