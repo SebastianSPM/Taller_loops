@@ -17,7 +17,7 @@ for(let i = 0; i < usuarios.length; i++){
     console.log("\nUsuario: ", usuarios[i].usuario);
     console.log("Movimientos: ");
     for(let j = 0; j < usuarios[i].movimientos.length; j++){    
-        console.log((j+1), usuarios[i].movimientos[j]);
+        console.log(j+1, usuarios[i].movimientos[j]);
     }
     console.log("\n");
 }
